@@ -1,0 +1,28 @@
+# caching and swaping
+__pycache__/
+*.py[cod]
+*.swp
+
+# folders
+virtualenv/
+
+# IDE
+.idea/
+
+# logs
+*.log
+
+# outs
+*.png
+*.jpg
+*.pdf
+
+# saves
+*.data*
+*.index
+*.meta
+*.pkl
+*.pickle
+*.bak
+*tfevents*
+checkpoint

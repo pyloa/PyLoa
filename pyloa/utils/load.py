@@ -52,7 +52,7 @@ def load_hyperparameters(config_file_path, run_mode):
     if 'type' not in params['instance']:
         raise HyperparamsConfigurationException("type of instance must be specified in params")
     if not issubclass(params['instance']['type'], InstanceGenerator):
-         raise HyperparamsConfigurationException("instance must be subclassed of '{}'".format(InstanceGenerator))
+        raise HyperparamsConfigurationException("instance must be subclassed of '{}'".format(InstanceGenerator))
     if 'environment' not in params:
         raise HyperparamsConfigurationException("environment must be specified in params")
     if 'type' not in params['environment']:

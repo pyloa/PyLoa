@@ -7,7 +7,6 @@ __author__ = "Matthias Rozanski, Sebastian Schoenitz"
 __copyright__ = "Copyright 2019, The PyLoa Project"
 __credits__ = []
 __license__ = "MIT"
-__version__ = "1.0.1"
 __maintainer__ = "PyLoa Developers"
 __email__ = "pyloadevelopers@gmail.com"
 __status__ = "Prototype"

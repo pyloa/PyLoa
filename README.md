@@ -116,7 +116,7 @@ params = {
 }
 ```
 
-This example is defined in [examples/0_train_qtable_paging/hyperparams.py](https://github.com/pyloa/PyLoa/tree/master/examples/0_train_qtable_paging) and can be run with
+This example is defined in [`examples/0_train_qtable_paging/hyperparams.py`](https://github.com/pyloa/PyLoa/blob/master/examples/0_train_qtable_paging/hyperparams.py) and can be run with
 
     pyloa train --config examples/0_train_qtable_paging/hyperparams.py
     

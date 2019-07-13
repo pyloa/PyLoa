@@ -16,15 +16,14 @@ setup(
     long_description="A research repository for analyzing the performance of classic on-line algorithms vs modern "
                      "Machine Learning, specifically Reinforcement Learning, approaches.",
 
-    url="https://github.com/TBD",
+    url="https://github.com/pyloa/PyLoa",
     project_urls={
-        "Bug Tracker": "https://github.com/TBD",
-        "Documentation": "https://github.com/TBD",
-        "Source Code": "https://github.com/TBD",
+        "Bug Tracker": "https://github.com/pyloa/PyLoa/issues",
+        "Documentation": "https://github.com/pyloa/PyLoa/tree/master/pyloa",
+        "Source Code": "https://github.com/pyloa/PyLoa/tree/master/pyloa",
     },
     platforms=['any'],
     entry_points={'console_scripts': ['pyloa=pyloa._main:main'], },
-    package_data={'pyloa': ['README.md', 'LICENCE', 'examples', 'requirements.txt']},
     keywords='on-line algorithms, paging, vertex coloring, machine learning',
     zip_safe=False
 )

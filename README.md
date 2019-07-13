@@ -41,7 +41,7 @@ Update [`pip`](https://pypi.org/project/pip/) and [`setuptools`](https://pypi.or
 
     pip install --upgrade pip setuptools
 
-Afterwards you can install `pyloa` either from its latest [PyPI stable](https://google.com) release
+Afterwards you can install `pyloa` either from its latest [PyPi stable](https://pypi.org/project/pyloa/) release
 
     pip install pyloa
     

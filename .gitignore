@@ -5,12 +5,15 @@ __pycache__/
 
 # folders
 virtualenv/
+dist/
+build/ 
 
 # IDE
 .idea/
 
 # logs
 *.log
+*.egg-info
 
 # outs
 *.png

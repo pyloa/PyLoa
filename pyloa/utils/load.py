@@ -27,15 +27,21 @@ def load_hyperparameters(config_file_path, run_mode):
     config_dir, config_file = os.path.split(config_file_path)
     config_file_name, config_file_type = config_file.rsplit(".", 1)
 
-    # update sys path, load from spec
+    # update sys.path, load from spec, clear sys.path
     sys.path.append(config_dir)
     spec = find_spec(config_file_name)
     if spec is None:
-        raise ModuleNotFoundError("Can not import module '{}' via spec")
+        raise ModuleNotFoundError("Can not import module '{}' via spec".format(config_file_name))
     module = module_from_spec(spec)
     spec.loader.exec_module(module)
     sys.path.remove(config_dir)
-    params = module.params
+
+    # check for AttributeError and raise HyperparamsConfigurationException instead
+    if hasattr(module, 'params'):
+        params = module.params
+    else:
+        raise HyperparamsConfigurationException("'params' attribute must be defined in config_file='{}'".format(
+            config_file_path))
 
     # check params for completeness and validity
     if not isinstance(params, dict):

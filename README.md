@@ -24,6 +24,7 @@ matplotlib==3.0.3
 scipy==1.2.1  
 tensorflow==1.13.1  
 tqdm==4.31.1  
+numpy==1.16.2
 ```
 
 ---
